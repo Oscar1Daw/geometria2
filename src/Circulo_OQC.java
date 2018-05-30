@@ -7,6 +7,11 @@ public class Circulo_OQC extends FiguraGeometrica_OQC {
 	public Circulo_OQC(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
+
+		if (radio < 0) {
+
+			radio *= -1;
+		}
 	}
 
 	@Override
